@@ -23,5 +23,43 @@ System.out.println(store2);
 String store3 = list.remove(1);
 int s = list.size();
 System.out.println(list);
+
+ArrayList<String> names = new ArrayList<String>();
+names.add("bob");
+names.add("mob");
+names.add("tom");
+names.add("axe");
+names.add("body");
+names.add("spray");
+int index = 0;
+while(names.size()>index){
+System.out.println(names.get(index));
+index++;
+}
+System.out.println(" ");
+for(int we = 0;names.size()>we;we++){
+	System.out.println(names.get(we));
+}
+System.out.println(" ");
+for(String name:names){
+    System.out.println(name);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 }
