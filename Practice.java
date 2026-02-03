@@ -23,6 +23,7 @@ System.out.println(store2);
 String store3 = list.remove(1);
 int s = list.size();
 System.out.println(list);
+System.out.println(" ");
 
 ArrayList<String> names = new ArrayList<String>();
 names.add("bob");
@@ -38,12 +39,27 @@ index++;
 }
 System.out.println(" ");
 for(int we = 0;names.size()>we;we++){
-	System.out.println(names.get(we));
+    if(names.get(we).substring(0,1).equals("a")){
+        names.set(we , "sue");
+    }
+    System.out.println(names.get(we));
 }
 System.out.println(" ");
 for(String name:names){
     System.out.println(name);
 
+}
+System.out.println(" ");
+int bye =0;
+while(names.size()>bye){
+    if(names.get(bye).indexOf("tom")>=0){
+        names.remove(bye);
+        bye++;
+    }
+        else{
+        bye++;
+    }    
+    System.out.println(names.get(bye));
 }
 
 
