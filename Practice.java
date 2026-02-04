@@ -65,7 +65,7 @@ while(names.size()>=bye){
     }    
     System.out.println(names.get(bye));
 }
-for(int y=0;y< names.size();i++){
+for(int y=names.size()-1;y<= 0;i--){
     if(names.get(bye).indexOf("bruh")>=0){
         names.remove(y);
     }
