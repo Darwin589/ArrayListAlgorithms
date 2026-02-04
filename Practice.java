@@ -54,7 +54,6 @@ int bye =0;
 while(names.size()>bye){
     if(names.get(bye).indexOf("tom")>=0){
         names.remove(bye);
-        bye++;
     }
         else{
         bye++;
