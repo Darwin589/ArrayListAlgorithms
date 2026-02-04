@@ -27,12 +27,16 @@ System.out.println(" ");
 
 ArrayList<String> names = new ArrayList<String>();
 names.add("bob");
+names.add("bruh");
 names.add("mob");
 names.add("tom");
 names.add("axe");
 names.add("body");
 names.add("spray");
+names.add("bruh");
+
 int index = 0;
+
 while(names.size()>index){
 System.out.println(names.get(index));
 index++;
@@ -51,17 +55,22 @@ for(String name:names){
 }
 System.out.println(" ");
 int bye =0;
-while(names.size()>bye){
+while(names.size()>=bye){
     if(names.get(bye).indexOf("tom")>=0){
         names.remove(bye);
+        
     }
         else{
         bye++;
     }    
     System.out.println(names.get(bye));
 }
-
-
+for(int y=0;y< names.size();i++){
+    if(names.get(bye).indexOf("bruh")>=0){
+        names.remove(y);
+    }
+    System.out.println(names.get(y));
+}
 
 
 
