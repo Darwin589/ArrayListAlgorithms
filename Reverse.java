@@ -10,6 +10,7 @@ public class Reverse {
     list.add("mom");
     System.out.println(list);
     System.out.println(ReverseThis(list));
+    System.out.println(DupeThis(list));
     }    
     public static ArrayList<String> ReverseThis (ArrayList<String> arr){
     ArrayList<String> response = new ArrayList<String>();
@@ -18,5 +19,12 @@ public class Reverse {
     }
     return response;
 }
-
+    public static ArrayList<String> DupeThis(ArrayList<String> Dupe){
+    ArrayList<String> backUp = new ArrayList<String>();
+    for (int i =0 ;i<Dupe.size();i++){
+        backUp.add(Dupe.get(i));
+        backUp.add(Dupe.get(i));
+    }
+    return backUp;
+    }    
 }
