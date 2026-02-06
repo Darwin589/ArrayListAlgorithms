@@ -8,9 +8,13 @@ public class Reverse {
     list.add("dad");
     list.add("bruh");
     list.add("mom");
+    list.add("mom");
+    list.add("job");
     System.out.println(list);
     System.out.println(ReverseThis(list));
     System.out.println(DupeThis(list));
+    System.out.println(findDuplicates(list));
+    System.out.println(acessPairs(list));
     }    
     public static ArrayList<String> ReverseThis (ArrayList<String> arr){
     ArrayList<String> response = new ArrayList<String>();
@@ -27,4 +31,26 @@ public class Reverse {
     }
     return backUp;
     }    
+    public static boolean findDuplicates(ArrayList<Integer> nums)
+    {
+        for(int i=0; i < nums.size();i++){
+            for(int j =i+1;j< nums.size();j++){
+                if(nums.get(i).equals(nums(j)){
+                    return true;
+                }
+                   }
+        }
+        return false;
+    }
+    public static boolean acessPairs(ArrayList<Integer> nums)
+    {
+        for(int i=0; i < nums.size();i++){
+            for(int j =i+1;j< nums.size();j++){
+                if(nums.get(i).equals(nums(j)){
+                    return true;
+                }
+                   }
+        }
+        return false;
+    }
 }
