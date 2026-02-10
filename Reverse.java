@@ -8,6 +8,7 @@ public class Reverse {
     list.add("dad");
     list.add("bruh");
     list.add("mom");
+<<<<<<< HEAD
     ArrayList <Integer> nums = new ArrayList <Integer>();
     nums.add(0);
     nums.add(1);
@@ -24,6 +25,15 @@ public class Reverse {
     System.out.println(DupeThis(list));
     System.out.println(nums);
     System.out.println(removeMe(nums));
+=======
+    list.add("mom");
+    list.add("job");
+    System.out.println(list);
+    System.out.println(ReverseThis(list));
+    System.out.println(DupeThis(list));
+    System.out.println(findDuplicates(list));
+    System.out.println(acessPairs(list));
+>>>>>>> cfc89eeefc78a7ff301b8f5b1510b7ecb858cb14
     }    
     public static ArrayList<String> ReverseThis (ArrayList<String> arr){
     ArrayList<String> response = new ArrayList<String>();
@@ -39,6 +49,7 @@ public class Reverse {
         backUp.add(Dupe.get(i));
     }
     return backUp;
+<<<<<<< HEAD
     }  
         public static boolean hasDuplicates(ArrayList<Integer> nums){
             for (int i =0; i<nums.size();i++){
@@ -59,4 +70,29 @@ public class Reverse {
     return num;
     }
     
+=======
+    }    
+    public static boolean findDuplicates(ArrayList<Integer> nums)
+    {
+        for(int i=0; i < nums.size();i++){
+            for(int j =i+1;j< nums.size();j++){
+                if(nums.get(i).equals(nums(j)){
+                    return true;
+                }
+                   }
+        }
+        return false;
+    }
+    public static boolean acessPairs(ArrayList<Integer> nums)
+    {
+        for(int i=0; i < nums.size();i++){
+            for(int j =i+1;j< nums.size();j++){
+                if(nums.get(i).equals(nums(j)){
+                    return true;
+                }
+                   }
+        }
+        return false;
+    }
+>>>>>>> cfc89eeefc78a7ff301b8f5b1510b7ecb858cb14
 }
